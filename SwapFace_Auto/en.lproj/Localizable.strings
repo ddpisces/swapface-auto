@@ -6,4 +6,11 @@
   Copyright (c) 2013年 dupeng. All rights reserved.
 */
 
+
+// pick up photo
+"select_photo_error_title" = "Photo Library Error!";
+"select_photo_error" = "There was a problem accessing your photo library, or you denied access to your photos. If it's the later, you can enable access in the Settings app.";
 "take_photo_error" = "Your device doesn't have a camera, or the camera is not functioning properly.";
+"take_photo_error_title" = "Camera Error!";
+
+"message_ok" = "OK";

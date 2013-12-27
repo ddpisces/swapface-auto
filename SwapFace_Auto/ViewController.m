@@ -50,10 +50,10 @@
     }
     else
     {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Photo Library Error!", nil)
-                                                        message:NSLocalizedString(@"There was a problem accessing your photo library, or you denied access to your photos. If it's the later, you can enable access in the Settings app.", nil)
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"select_photo_error_title", nil)
+                                                        message:NSLocalizedString(@"select_photo_error", nil)
                                                        delegate:nil
-                                              cancelButtonTitle:NSLocalizedString(@"OK", nil)
+                                              cancelButtonTitle:NSLocalizedString(@"message_ok", nil)
                                               otherButtonTitles:nil];
         [alert show];
     }
@@ -71,10 +71,10 @@
 	}
 	else
 	{
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Camera Error!", nil)
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"take_photo_error_title", nil)
                                                         message:NSLocalizedString(@"take_photo_error", nil)
                                                        delegate:nil
-                                              cancelButtonTitle:NSLocalizedString(@"OK", nil)
+                                              cancelButtonTitle:NSLocalizedString(@"message_ok", nil)
                                               otherButtonTitles:nil];
 		[alert show];
 	}
