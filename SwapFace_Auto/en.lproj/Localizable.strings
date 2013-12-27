@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  SwapFace_Auto
+
+  Created by dupeng on 13-12-27.
+  Copyright (c) 2013年 dupeng. All rights reserved.
+*/
+
+"take_photo_error" = "Your device doesn't have a camera, or the camera is not functioning properly.";

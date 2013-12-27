@@ -72,7 +72,7 @@
 	else
 	{
 		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Camera Error!", nil)
-                                                        message:NSLocalizedString(@"Your device doesn't have a camera, or the camera is not functioning properly.", nil)
+                                                        message:NSLocalizedString(@"take_photo_error", nil)
                                                        delegate:nil
                                               cancelButtonTitle:NSLocalizedString(@"OK", nil)
                                               otherButtonTitles:nil];

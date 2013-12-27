@@ -60,6 +60,7 @@
 		B892430C186C77A100D3D656 /* tl.png in Resources */ = {isa = PBXBuildFile; fileRef = B89242F1186C77A100D3D656 /* tl.png */; };
 		B892430D186C77A100D3D656 /* wifi.png in Resources */ = {isa = PBXBuildFile; fileRef = B89242F2186C77A100D3D656 /* wifi.png */; };
 		B892430E186C77A100D3D656 /* wifi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B89242F3186C77A100D3D656 /* wifi@2x.png */; };
+		B8924338186DD1ED00D3D656 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B892433A186DD1ED00D3D656 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +144,9 @@
 		B89242F1186C77A100D3D656 /* tl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tl.png; sourceTree = "<group>"; };
 		B89242F2186C77A100D3D656 /* wifi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wifi.png; sourceTree = "<group>"; };
 		B89242F3186C77A100D3D656 /* wifi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wifi@2x.png"; sourceTree = "<group>"; };
+		B8924339186DD1ED00D3D656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B892433B186DD21800D3D656 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		B892433C186DD23C00D3D656 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +221,7 @@
 		B8924285186C6F5F00D3D656 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B892433A186DD1ED00D3D656 /* Localizable.strings */,
 				B8924286186C6F5F00D3D656 /* SwapFace_Auto-Info.plist */,
 				B8924287186C6F5F00D3D656 /* InfoPlist.strings */,
 				B892428A186C6F5F00D3D656 /* main.m */,
@@ -369,6 +374,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = B8924272186C6F5F00D3D656;
 			productRefGroup = B892427C186C6F5F00D3D656 /* Products */;
@@ -402,6 +408,7 @@
 				B892430C186C77A100D3D656 /* tl.png in Resources */,
 				B8924301186C77A100D3D656 /* gsm.png in Resources */,
 				B892430D186C77A100D3D656 /* wifi.png in Resources */,
+				B8924338186DD1ED00D3D656 /* Localizable.strings in Resources */,
 				B8924306186C77A100D3D656 /* i_icon@2x.png in Resources */,
 				B8924292186C6F5F00D3D656 /* Main.storyboard in Resources */,
 				B89242FD186C77A100D3D656 /* donotdisturb.png in Resources */,
@@ -493,6 +500,16 @@
 				B89242A7186C6F5F00D3D656 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B892433A186DD1ED00D3D656 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8924339186DD1ED00D3D656 /* Base */,
+				B892433B186DD21800D3D656 /* zh-Hans */,
+				B892433C186DD23C00D3D656 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -657,6 +674,7 @@
 				B89242AF186C6F5F00D3D656 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B89242B0186C6F5F00D3D656 /* Build configuration list for PBXNativeTarget "SwapFace_AutoTests" */ = {
 			isa = XCConfigurationList;
@@ -665,6 +683,7 @@
 				B89242B2186C6F5F00D3D656 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
