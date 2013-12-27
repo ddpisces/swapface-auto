@@ -11,7 +11,9 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIView *bg;
-@property (weak, nonatomic) IBOutlet UIButton *btnFromCamera;
+
+- (IBAction)selectPhoto:(id)sender;
+- (IBAction)takePhoto:(id)sender;
 
 @end
 
@@ -32,4 +34,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+#pragma mark - Button Actions (From Camera and Phone)
+
+- (IBAction)selectPhoto:(id)sender {
+}
+
+- (IBAction)takePhoto:(id)sender {
+}
 @end
