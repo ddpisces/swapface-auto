@@ -38,8 +38,58 @@
 #pragma mark - Button Actions (From Camera and Phone)
 
 - (IBAction)selectPhoto:(id)sender {
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary])
+    {
+        UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+        imagePickerController.delegate = self;
+        imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        
+        
+        [self presentViewController:imagePickerController animated:YES completion:NULL];
+        
+    }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Photo Library Error!", nil)
+                                                        message:NSLocalizedString(@"There was a problem accessing your photo library, or you denied access to your photos. If it's the later, you can enable access in the Settings app.", nil)
+                                                       delegate:nil
+                                              cancelButtonTitle:NSLocalizedString(@"OK", nil)
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
 }
 
 - (IBAction)takePhoto:(id)sender {
+    
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
+	{
+        UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+        imagePickerController.delegate = self;
+        imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+        
+        [self presentViewController:imagePickerController animated:YES completion:NULL];
+	}
+	else
+	{
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Camera Error!", nil)
+                                                        message:NSLocalizedString(@"Your device doesn't have a camera, or the camera is not functioning properly.", nil)
+                                                       delegate:nil
+                                              cancelButtonTitle:NSLocalizedString(@"OK", nil)
+                                              otherButtonTitles:nil];
+		[alert show];
+	}
 }
+
+#pragma mark - UIImagePickerController Delegate
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
 @end
