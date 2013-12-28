@@ -50,6 +50,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Editor View Controller-->
+        <scene sceneID="WuI-ZM-pkm">
+            <objects>
+                <viewController storyboardIdentifier="EditorViewController" id="3hJ-4e-8tk" customClass="EditorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nLO-ra-UAy"/>
+                        <viewControllerLayoutGuide type="bottom" id="cCD-73-Zh7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s2x-wb-O2w">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qUk-pd-glL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="567" y="75"/>
+        </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

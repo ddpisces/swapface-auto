@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "EditorViewController.h"
 
 @interface ViewController ()
 
@@ -84,7 +85,14 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-
+    EditorViewController *editorViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"EditorViewController"];
+    
+    
+    [self dismissViewControllerAnimated:YES
+                             completion:^
+     {
+         [self.navigationController pushViewController:editorViewController animated:YES];
+     }];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
