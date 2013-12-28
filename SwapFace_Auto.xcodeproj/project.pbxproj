@@ -62,6 +62,7 @@
 		B892430E186C77A100D3D656 /* wifi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B89242F3186C77A100D3D656 /* wifi@2x.png */; };
 		B8924338186DD1ED00D3D656 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B892433A186DD1ED00D3D656 /* Localizable.strings */; };
 		B892433F186DE13C00D3D656 /* EditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B892433E186DE13C00D3D656 /* EditorViewController.m */; };
+		B8924342186F026900D3D656 /* MainNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8924341186F026900D3D656 /* MainNavigationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +151,8 @@
 		B892433C186DD23C00D3D656 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B892433D186DE13C00D3D656 /* EditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorViewController.h; sourceTree = "<group>"; };
 		B892433E186DE13C00D3D656 /* EditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorViewController.m; sourceTree = "<group>"; };
+		B8924340186F026900D3D656 /* MainNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationViewController.h; sourceTree = "<group>"; };
+		B8924341186F026900D3D656 /* MainNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +216,8 @@
 				B892428D186C6F5F00D3D656 /* AppDelegate.h */,
 				B892428E186C6F5F00D3D656 /* AppDelegate.m */,
 				B8924290186C6F5F00D3D656 /* Main.storyboard */,
+				B8924340186F026900D3D656 /* MainNavigationViewController.h */,
+				B8924341186F026900D3D656 /* MainNavigationViewController.m */,
 				B892433D186DE13C00D3D656 /* EditorViewController.h */,
 				B892433E186DE13C00D3D656 /* EditorViewController.m */,
 				B8924293186C6F5F00D3D656 /* ViewController.h */,
@@ -460,6 +465,7 @@
 				B89242D6186C778C00D3D656 /* PBIconDrawning.m in Sources */,
 				B89242D3186C778C00D3D656 /* PBFlatSegmentedControl.m in Sources */,
 				B89242D5186C778C00D3D656 /* PBFlatTextfield.m in Sources */,
+				B8924342186F026900D3D656 /* MainNavigationViewController.m in Sources */,
 				B89242D7186C778C00D3D656 /* UIImage+Additions.m in Sources */,
 				B892428B186C6F5F00D3D656 /* main.m in Sources */,
 			);

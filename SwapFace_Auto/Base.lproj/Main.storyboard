@@ -63,10 +63,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="csO-Yk-8M9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qUk-pd-glL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="567" y="75"/>
+            <point key="canvasLocation" x="765" y="783"/>
+        </scene>
+        <!--Main Navigation View Controller-->
+        <scene sceneID="fE4-XV-fti">
+            <objects>
+                <navigationController storyboardIdentifier="mainnavigation" definesPresentationContext="YES" id="1pG-OI-004" customClass="MainNavigationViewController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3pw-XF-GrP">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3hJ-4e-8tk" kind="relationship" relationship="rootViewController" id="L5k-Mc-Fo3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bgh-Vm-ZwV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="289" y="783"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

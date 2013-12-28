@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "EditorViewController.h"
+#import "MainNavigationViewController.h"
 
 @interface ViewController ()
 
@@ -85,13 +86,13 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    EditorViewController *editorViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"EditorViewController"];
+    MainNavigationViewController *mainNavigationViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"mainnavigation"];
     
     
     [self dismissViewControllerAnimated:YES
                              completion:^
      {
-         [self.navigationController pushViewController:editorViewController animated:YES];
+         [self presentViewController:mainNavigationViewController animated:YES completion:nil];
      }];
 }
 
